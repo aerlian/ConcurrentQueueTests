@@ -16,5 +16,7 @@ endif()
 include_directories(${Boost_INCLUDE_DIRS})
 include_directories(${fmt_INCLUDE_DIRS})
 
-add_executable(DisruptorTests main.cpp)
+add_executable(DisruptorTests main.cpp MoodyTests.cpp MoodyTests.h TestCommon.h DisruptorTests.cpp DisruptorTests.h)
 include_directories(disruptor)
+include_directories(Moody)
+
